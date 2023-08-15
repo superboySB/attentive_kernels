@@ -28,7 +28,8 @@ I personally prefer `mamba` over `conda` because `mamba` provides the same inter
 conda create -n ak python=3.8
 conda activate ak
 BEZIER_NO_EXTENSION=true pip install --upgrade bezier --no-binary=bezier
-pip install pypolo==0.0.3
+pip install -r requirements.txt
+pip install -e .
 ```
 
 ## Single-File Demo
@@ -38,7 +39,7 @@ If you would like to quickly understand the Attentive Kernel and apply it to you
 
 ```bash
 conda activate ak
-cd attentive_kernels/demo
+cd demo/kernel_test
 python main.py
 ```
 
